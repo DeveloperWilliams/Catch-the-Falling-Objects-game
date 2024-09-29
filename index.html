@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Falling Objects Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Misses: <span id="misses">0</span></p>
+        </div>
+        <div id="difficulty-selection">
+            <h2>Select Difficulty:</h2>
+            <button id="easy-button">Easy</button>
+            <button id="medium-button">Medium</button>
+            <button id="hard-button">Hard</button>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        <div id="game-over-screen">
+            <h2>Game Over!</h2>
+            <button id="restart-button">Restart</button>
+            <p>High Score: <span id="final-high-score">0</span></p>
+        </div>
+    </div>
+    <!-- Sound effects -->
+    <audio id="golden-sound" src="sounds/golden.mp3"></audio>
+    <audio id="bomb-sound" src="sounds/bomb.mp3"></audio>
+    <audio id="catch-sound" src="sounds/catch.mp3"></audio>
+    <audio id="miss-sound" src="sounds/miss.mp3"></audio>
+    <audio id="game-over-sound" src="sounds/game-over.mp3"></audio>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>

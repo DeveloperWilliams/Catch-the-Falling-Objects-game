@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+canvas {
+    background-color: #444;
+    border: 2px solid #ccc;
+}
+
+#score-board {
+    margin-top: 10px;
+}
+
+#difficulty-selection, #game-over-screen {
+    display: none;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccc;
+}
