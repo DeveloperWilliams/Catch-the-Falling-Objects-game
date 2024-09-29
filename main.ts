@@ -51,6 +51,13 @@ class Player implements IGameObject {
 }
 
 // Base class for falling objects
+interface IGameObject {
+    x: number;
+    y: number;
+    speed: number;
+    draw(): void;
+}
+
 class FallingObject implements IGameObject {
     x: number;
     y: number;
